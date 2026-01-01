@@ -16,7 +16,7 @@ app.get('/', (req,res)=>{
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: "https://homodeal-frontend.onrender.com/",
     credentials: true,
   })
 );
