@@ -16,7 +16,7 @@ app.get('/', (req,res)=>{
 app.use(express.json());
 app.use(
   cors({
-    origin: Process.env.frontend_URL,
+    origin: process.env.frontend_URL,
     credentials: true,
   })
 );
