@@ -16,7 +16,7 @@ app.get('/', (req,res)=>{
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://homodeal-frontend.onrender.com/",
+    origin: Process.env.frontend_URL,
     credentials: true,
   })
 );
