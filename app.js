@@ -5,6 +5,13 @@ const cors = require("cors");
 
 const app = express();
 
+
+app.get('/', (req,res)=>{
+  res.send(
+    "HOMODEAL BACKEND"
+  );
+});
+
 // ----------------------------------------- Middlewares -------------------------------------
 app.use(express.json());
 app.use(
